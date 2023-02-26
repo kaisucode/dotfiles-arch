@@ -1,0 +1,10 @@
+
+# Swap escape with caps lock
+setxkbmap -option 'caps:swapescape'
+
+# Keyboard repeat delay and rate
+xset r rate 320 40
+
+# Pywal color scheme and background image
+wal -R
+

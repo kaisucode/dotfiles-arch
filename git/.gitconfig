@@ -1,0 +1,16 @@
+[user]
+	name = Kevin Hsu
+	email = kevin.hsukaihao@gmail.com
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = false
+[credential]
+	helper = store
+	; helper = cache --timeout=300
+[init]
+	defaultBranch = master
+[url "https://"]
+	insteadOf = git://
+

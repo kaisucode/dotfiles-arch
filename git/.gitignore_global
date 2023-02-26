@@ -1,0 +1,32 @@
+# Mac #
+.DS_Store
+.Spotlight-V100
+.Trashes
+.Trash/
+*.dSYM/
+
+# General #
+log/
+*.log
+
+# Compiled source #
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+
+# Node #
+npm-debug.log
+node_modules/
+
+# Python #
+__pycache__/
+env/
+venv/
+
+
+# pyenv
+.python-version 
