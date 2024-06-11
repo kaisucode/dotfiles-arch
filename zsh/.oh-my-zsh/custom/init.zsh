@@ -1,7 +1,7 @@
 
-ZSH_THEME="dracula"
-# ZSH_THEME="lena"
-# ZSH_THEME="garyblessington"
+#ZSH_THEME="dracula"
+#ZSH_THEME="lena"
+#ZSH_THEME="garyblessington"
 
 (cat ~/.cache/wal/sequences &)
 

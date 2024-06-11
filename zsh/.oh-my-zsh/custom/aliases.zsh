@@ -80,7 +80,7 @@ function swapfiles()
 
 # --- Vim ---
 alias v="nvim"
-alias vi="nvim"
+alias vi="vim"
 alias vif='nvim $(fzf)'
 alias readme="nvim README.md"
 alias swap="cd ~/.local/share/nvim/swap/"

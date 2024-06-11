@@ -20,15 +20,5 @@ vnoremap ; :
 nmap <CR> o<ESC>
 nmap <space><space> :w<CR>
 
-nnoremap d "_d
-vnoremap d "_d
-
-nnoremap c "_c
-vnoremap c "_c
-
-inoremap <C-x> <Esc><S-v>xi
-nnoremap <C-x> <S-v>x
-vnoremap <C-x> x
-
 autocmd! bufwritepost .vimrc source %
 

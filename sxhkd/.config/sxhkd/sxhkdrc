@@ -8,9 +8,9 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
-	# rofi -combi-modi window,drun,ssh -theme solarized -font "hack 10" -show combi
-	# rofi -modi run,drun,window -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font "Noto Sans 12"
+	rofi -modi run,drun,window -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font "Noto Sans 24"
+	#rofi -combi-modi window,drun,ssh -theme solarized -font "hack 10" -show combi
+	# dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape

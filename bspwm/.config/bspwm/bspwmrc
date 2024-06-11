@@ -3,7 +3,10 @@
 sxhkd &
 compton &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+$HOME/.config/polybar/launch.sh
+
+#bspc monitor -d I II III IV V VI VII VIII IX X
+$HOME/.config/bspwm/monitor-script.sh
 
 bspc config border_width         3
 bspc config window_gap          12
