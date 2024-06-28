@@ -6,7 +6,9 @@ monitor_resolution="3840x2160"
 #monitor_resolution="2560x1600"
 monitor_name="HDMI-1-2"
 
-display_resolution="2560x1600"
+#display_resolution="2560x1600"
+#display_resolution="2048x1152"
+display_resolution="1920x1200"
 display_name="eDP-1"
 
 
@@ -19,7 +21,7 @@ then
 	bspc monitor $monitor_name -d 1 2 3 4
 	bspc monitor $display_name -d 5 6 7 8
 else
-	xrandr --output $display_name --primary --mode $display_resolution --rotate normal
+	xrandr --output $display_name --primary --mode $display_resolution --rotate normal --scale "1.0x1.0"
 	bspc monitor $display_name -d 1 2 3 4 5 6 7 8
 fi
 
