@@ -17,10 +17,28 @@ super + Escape
 	dunstify "sxhkd" "Reloading..." && pkill -USR1 -x sxhkd
 	
 
+# launch applications (should switch to hyper keys / right control)
 
+#Escape + f
+#	firefox
+#
+#Escape + b
+#	blender
+#
+#Escape + g
+#	godot
+
+# brightness
 XF86MonBrightness{Up,Down}  
 	brightnessctl s 10{+,-} && dunstify "sxhkd" "Brightness $(brightnessctl i | grep 'Current brightness' | cut -d '(' -f2 | cut -d ')' -f1)"
 
+XF86AudioRaiseVolume
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && dunstify "audio" "$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
+
+XF86AudioLowerVolume
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && dunstify "audio" "$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
+XF86AudioMute
+	wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 #
 # bspwm hotkeys
